@@ -2,8 +2,9 @@ import { calculateInvestmentResults } from "../util/investment";
 import { formatter } from "../util/investment";
 
 export default function Results({ userInputs }) {
-    const resultsData = [];
-    calculateInvestmentResults(userInputs, resultsData);
+    const resultsData = calculateInvestmentResults(userInputs);
+    
+    console.log(resultsData)
     const initialInvestment = resultsData[0].valueEndOfYear - resultsData[0].interest - resultsData[0].annualInvestment;
 
     return <table id="result">

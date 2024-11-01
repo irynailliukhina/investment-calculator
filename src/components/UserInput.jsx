@@ -18,6 +18,5 @@ export default function UserInput({onChange, userInputs}) {
                 onChange={(event) => onChange("duration", event.target.value)}/>
             </p>
             </div>
-       
     </section>)
 }
