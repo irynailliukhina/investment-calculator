@@ -7,5 +7,5 @@ export default defineConfig({
   build: {
     outDir: 'build',  // Specifies the output directory as 'build'
   },
-  base: "https://irynailliukhina.github.io/investment-calculator/"
+  base: "/investment-calculator/"
 })
